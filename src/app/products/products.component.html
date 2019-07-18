@@ -1,18 +1,7 @@
-<div class="d-flex flex-row flex-wrap">
-    <div *ngFor="let product of products">
-        <div class="card bg-dark">
-            <img class="card-img-top" src="{{product.image}}" alt="Card image">
-            <div class="row">
-                <div class="col-md-8">
-                    <h4 class="card-title">{{product.name}}</h4>
-                </div>
-                <div class="col-md-4 flex-no-wrap">
-                    <div class="card-title">{{ product.price }}</div>
-                </div>
-            </div>
-                <p class="card-text">{{product.description}}</p>
-                <a href="" class="btn btn-primary">Read more...</a>
-        </div>
-    </div>
-</div>
+<div *ngFor="let product of products">
+    <h2>{{product.name}}</h2>
 
+    <p>
+        {{product.description}}
+    </p>
+</div>

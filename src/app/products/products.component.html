@@ -1,18 +1,18 @@
 <div class="d-flex flex-row flex-wrap">
     <div *ngFor="let product of products">
-        <div class="card bg-dark mr-2 mb-2">
+        <div class="card mr-2 mb-2 p-2">
             <img class="card-img-top" src="{{product.image}}" alt="Card image">
             <hr class="line">
             <div class="row">
-                <div class="col-md-8">
-                    <h4 class="card-title">{{product.name}}</h4>
+                <div class="col-7">
+                    <h4 class="card-title text-center">{{product.name}}</h4>
                 </div>
-                <div class="col-md-4 flex-no-wrap">
-                    <div class="card-title">{{ product.price }}</div>
+                <div class="col-5 flex-no-wrap">
+                    <div class="card-title text-center text-nowrap">&euro; {{ product.price }}</div>
                 </div>
             </div>
-                <p class="card-text">{{product.description}}</p>
-                <a href="" class="btn btn-primary">Read more...</a>
+                <p class="card-text text-center">{{product.description}}</p>
+                <a href="" class="btn btn-primary"><fa-icon [icon]="faCartPlus"></fa-icon></a>
         </div>
     </div>
 </div>

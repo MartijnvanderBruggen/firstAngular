@@ -4,15 +4,19 @@
             <img class="card-img-top" src="{{product.image}}" alt="Card image">
             <hr class="line">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12">
                     <h4 class="card-title text-center">{{product.name}}</h4>
-                </div>
-                <div class="col-5 flex-no-wrap">
-                    <div class="card-title text-center text-nowrap">&euro; {{ product.price }}</div>
                 </div>
             </div>
                 <p class="card-text text-center">{{product.description}}</p>
-                <a href="" class="btn btn-primary"><fa-icon [icon]="faCartPlus"></fa-icon></a>
+                <a href="" class="btn btn-primary">
+                    <div class="card-title text-center text-nowrap d-flex justify-content-around align-self-center">
+
+                            <fa-icon [icon]="faCartPlus"></fa-icon>
+
+                            <span> {{ product.price | currency : 'EUR' }}</span>
+                    </div>
+                </a>
         </div>
     </div>
 </div>

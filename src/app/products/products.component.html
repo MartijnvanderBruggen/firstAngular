@@ -1,4 +1,4 @@
-<div class="d-flex flex-row flex-wrap">
+<div class="container d-flex flex-row flex-wrap">
     <div *ngFor="let product of products">
         <div class="card mr-2 mb-2 p-2">
             <img class="card-img-top" src="{{product.image}}" alt="Card image">
@@ -10,7 +10,7 @@
             </div>
                 <p class="card-text text-center">{{product.description}}</p>
                 <a href="" class="btn btn-primary">
-                    <div class="card-title text-center text-nowrap d-flex justify-content-around align-self-center">
+                    <div class="card-title text-nowrap d-flex justify-content-around align-self-center">
 
                             <fa-icon [icon]="faCartPlus"></fa-icon>
 

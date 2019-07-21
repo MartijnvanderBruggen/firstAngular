@@ -9,8 +9,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductsComponent } from './products/products.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
-
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 
 
@@ -26,8 +26,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    MDBBootstrapModule.forRoot(),
-
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
